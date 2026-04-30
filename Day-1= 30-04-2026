@@ -23,23 +23,6 @@ int main (){
     float result;
     cin >> userInput;
     result = (double) globalVariable / userInput;
-
-
-
-//Problem 4 Swap values of two variables using 3rd variable    
-#include <iostream>
-using namespace std;
-
-int main (){ 
-    int a;
-    int b;
-    cin >> a>> b;
-    //swapping logic
-    int temp = a;
-    cout << a << "\n" << b << endl;
-    
-    return 0;
-}
     
      cout << result << endl;
      return 0; }
@@ -74,3 +57,68 @@ int main (){
     
     return 0;
 }
+
+// program 5 Area of Shapes
+// 1 -- circle, 2 == rectangle, 3-- triangle
+#include<iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cin >> choice;
+    
+    if(choice == 1){
+        double radius;
+        cin >> radius;
+        cout << 3.14 * radius * radius << endl;
+    } else if (choice == 2) {
+        double length, width;
+        cin >> length >> width;
+        cout << length * width<< endl;
+    } else if (choice == 3) {
+        double base, height;
+        cin >> base >> height;
+        cout << 0.5 * base * height << endl;
+    } else {
+        cout << "invalid Choice" << endl;
+    }
+    return 0;
+    
+}
+
+// program 6sum and average of 3 numbers 
+// take input from the users and find sum and average 
+#include<iostream>
+using namespace std;
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    
+    double average = (a + b + c) / 3.0;
+    cout << average << endl;
+    
+    return 0;
+}
+
+//Program 7
+#include<iostream>
+using namespace std;
+
+int main(){
+    const int userID = 1234;
+    const int password = 5678;
+
+    int inputID, inputPassword;
+    cout << "Enter User ID: ";
+    cin >> inputID;
+    cout << "Enter Password: ";
+    cin >> inputPassword;
+
+    bool isGranted = (userID == inputID) && (password == inputPassword);
+    cout << "Access Granted" << isGranted << endl;
+    cout << "Access Denied" << !isGranted << endl;
+
+    return 0;
+}
+
+
