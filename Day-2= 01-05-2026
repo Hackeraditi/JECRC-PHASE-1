@@ -115,3 +115,29 @@ int main() {
     cout << "The total sum is:"<<sum << endl;
     return 0;
 }
+
+
+//program-7 smart home lighting system
+#include <iostream>
+using namespace std;
+int main() {
+
+    string dayOrNight;
+    bool motionDetected;
+
+    cout << "Is it day or night?: ";
+    cin >> dayOrNight;
+    cout << "Is there motion detected? (1 for yes, 0 for no): ";
+    cin >> motionDetected;
+
+    if (dayOrNight == "night" ||  dayOrNight == "Night") {
+        if(motionDetected) {
+        cout << "The lights are ON with 100% brightness...." << endl;
+    } else {
+        cout << "The lights are ON with 10% brightness..." << endl;
+    } 
+  }else {
+        cout << "Turn off the lights...." << endl;
+    }
+    return 0;
+}
