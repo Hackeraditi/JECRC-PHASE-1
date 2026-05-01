@@ -32,3 +32,31 @@ int main() {
     }
     return 0;
 }
+
+//Program-3 --nested if-else condition
+//to verify user's age whether eligible for vote or not?
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    
+    // if condition 
+    if(age >= 18) {
+        if (age >= 100) {
+            // logic 
+            cout << "Eligible For vote and Senior Citizen" << endl;
+        } else {
+            // logic 
+            cout << "Eligible For vote" << endl;
+        }
+    } else {
+        if(age < 0) {
+            cout << "Invalid age" << endl;
+        } else {
+            cout << "Not Eligible For vote" << endl;
+        }
+    }
+    return 0;
+}
