@@ -56,3 +56,21 @@ int main ()
   updatebyReference(original);
    cout << original;
 }
+
+//practice 
+#include <iostream>
+using namespace std;
+
+int coffee(int cups) {
+    return cups * 100;
+}
+
+int main() {
+    int cups;
+    cin >> cups;
+    cout << coffee(cups);
+    return 0;
+}
+
+
+
