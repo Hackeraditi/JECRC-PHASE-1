@@ -1,0 +1,56 @@
+//Single inheritance
+#include <iostream>
+using namespace std;
+ int main(){
+    class A{
+        public:
+        void start(){
+            cout<<"This is class A start"<<endl;
+        }
+    };
+    class B:public A{
+        public:
+        void drive(){
+            cout<<"This is class B become drive"<<endl;
+        }
+    };
+    B obj;
+    obj.start();
+    obj.drive();
+    return 0;
+ }
+
+ //multilevel inheritance
+#include <iostream>
+using namespace std;
+
+    int main(){
+        class A{
+            public:
+            void start(){
+                cout<<"This is class A start"<<endl;
+            }
+        };
+        class B:public A{
+            public:
+            void drive(){
+                cout<<"This is class B become drive"<<endl;
+            }
+        };
+        class C:public B{
+            public:
+            void stop(){
+                cout<<"This is class C become stop"<<endl;
+            }
+        };
+        C obj;
+        obj.start();
+        obj.drive();
+        obj.stop();
+        return 0;
+    }
+
+    //multiple inheritance
+#include <iostream>
+using namespace std;
+
