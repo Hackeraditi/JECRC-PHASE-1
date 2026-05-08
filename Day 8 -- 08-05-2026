@@ -111,3 +111,39 @@ using namespace std;
         return 0;
     }
 
+//hybrid inheritance
+#include <iostream>
+using namespace std;
+ class Animal{
+    public:
+    void sound(){
+        cout<<"Animal makes sound"<<endl;
+    }
+ };
+  class Dog : public Animal{
+    public:
+    void bark(){
+        cout<<"Dog barks"<<endl;
+    }
+  };
+
+  class Cat : public Animal{
+    public:
+    void meow(){
+        cout<<"cat meows"<<endl;
+    }
+  };
+    class Hybrid : public Dog, public Cat{
+        public:
+        void display(){
+            cout<<"This is a hybrid animal"<<endl;
+        }
+    };
+    int main(){
+        Hybrid h;
+        h.bark();
+        h.meow();
+        h.display();
+        return 0;
+    }
+
