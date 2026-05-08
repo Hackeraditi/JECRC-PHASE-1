@@ -85,4 +85,29 @@ int main(){
     //multiple inheritance
 #include <iostream>
 using namespace std;
+ class A{
+    public:
+    void start(){
+        cout<<"This is class A start"<<endl;
+    }
+ };
+    class B{
+        public:
+        void drive(){
+            cout<<"This is class B become drive"<<endl;
+        }
+    };
+    class C:public A,public B{
+        public:
+        void stop(){
+            cout<<"This is class C become stop"<<endl;
+        }
+    };
+    int main(){
+        C c;
+        c.start();
+        c.drive();
+        c.stop();
+        return 0;
+    }
 
