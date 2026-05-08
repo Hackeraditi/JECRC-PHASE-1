@@ -50,6 +50,38 @@ using namespace std;
         return 0;
     }
 
+    //hierachial inheritance
+#include <iostream> 
+using namespace std;
+int main(){
+    class A{
+        public:
+        void start(){
+            cout<<"This is class A start"<<endl;
+        }
+    };
+    class B:public A{
+        public:
+        void drive(){
+            cout<<"This is class B become drive"<<endl;
+        }
+    };
+    class C:public A{
+        public:
+        void stop(){
+            cout<<"This is class C become stop"<<endl;
+        }
+    };
+    B obj1;
+    C obj2; 
+    obj1.start();
+    obj1.drive();
+    obj2.start();
+    obj2.stop();
+
+    return 0;
+}
+
     //multiple inheritance
 #include <iostream>
 using namespace std;
