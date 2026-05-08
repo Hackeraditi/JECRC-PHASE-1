@@ -82,7 +82,8 @@ int main(){
     return 0;
 }
 
-    //multiple inheritance
+
+//1Multiple inheritance
 #include <iostream>
 using namespace std;
  class A{
@@ -110,6 +111,37 @@ using namespace std;
         c.stop();
         return 0;
     }
+
+// 2.Multiple inheritance
+#include <iostream>
+using namespace std;
+class Parent1 {
+public:
+    void giveMeMoney() {
+        cout << "hjbfch"<<endl;
+    }
+    
+};
+
+class Parent2 {
+public:
+    void giveMeMoney() {
+        cout << "hjhtrgiubfch";
+    }
+    
+};
+
+class child : public Parent1, public Parent2 {
+  //no logic     
+};
+
+int main () {
+    child obj1;
+    obj1.Parent1::giveMeMoney();
+    obj1.Parent2::giveMeMoney();
+    return 0;
+}
+
 
 //hybrid inheritance
 #include <iostream>
